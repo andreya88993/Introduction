@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+/* для перемещения по странице */
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body{
+  font-size: 20px;
+  color: #646262;
+  margin: 10px;
+
+}
+
+#navbar{
+  width: 280px;
+  height: 100%;
+/*   в таком случае border будет на всю длину */
+  margin-right: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 3px solid #7b6f6f;
+  border-color: #7b6f6f;
+}
+
+
+.navbar-menu li{
+  border-top: 1px solid;
+  list-style-type: none;
+/*   удаляю маркер */
+  padding: 10px;
+  
+}
+
+.navbar-menu li a{
+  text-decoration: none;
+  color: #646262;
+}
+
+
+.navbar-menu li a:hover{
+  color: #27153c;
+  font-weight: bold;
+}
+
+
+
+#main-doc{
+  margin-left: 300px;
+}
+
+h3, h4{
+  color: black;
+}
+
+h3{
+  padding: 10px;
+}
+
+h4{
+  margin-top: 10px;
+  margin-bottom: 10px;
+ 
+}
+
+code{
+  display: block;
+  /*  увеличил background до конца страницы */
+  margin: 5px;
+  padding: 10px;
+  background: #e0e0e0;
+  white-space: pre-line;
+/*   устанавливает пробелы между словами */
+  word-break: normal;
+  word-wrap: normal;
+}
+
+p{
+padding: 10px;  
+}
+
+.main-section ul li{
+  margin-left: 100px;
+  padding: 10px;
+}
+
+
+@media (max-width: 700px){
+body{
+  font-size: 12px;
+}
+   #navbar{
+  width: 100%;
+   }
+  h3{
+  background: #345;
+  color: white;
+  text-align: center; 
+}
+  h4{
+    padding-top: 110px;
+  }
+.navbar-menu{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  background: black; 
+}
+  #navbar ul li{
+    font-weight: bold;
+    border-right: 1px solid;
+    padding: 10px 20px;
+    border-top: none;
+    }
+  .navbar-menu li a:hover{
+  color: #faf9fa;
+  font-weight: bold;
+}
+   #main-doc{
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
+  }
+
+}
